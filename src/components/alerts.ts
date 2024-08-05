@@ -70,10 +70,10 @@ export function deleteAlert(message: string): Promise<any> {
     });
 }
 
-export function modalAlert(message:string, date:string){
+export function modalAlert(message:string){
   Swal.fire({
-    title: message,
-    text: date,
+    title: "Palabras a corregir",
+    text: message,
     icon: "info"
   });
 }
