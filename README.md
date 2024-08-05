@@ -13,7 +13,7 @@ This project is a web application that application that draws the posts
 
 1. **Clone the repository**:
    git clone (https://github.com/luisaramicar11/pruebaTypescript)
-   cd Consumo-API-con-Typescript
+
 
 2. **Install dependencies**:
 npm install
