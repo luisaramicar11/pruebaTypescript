@@ -72,7 +72,7 @@ export function deleteAlert(message: string): Promise<any> {
 
 export function modalAlert(message:string){
   Swal.fire({
-    title: "Palabras a corregir",
+    title: "Correciones para realizar",
     text: message,
     icon: "info"
   });

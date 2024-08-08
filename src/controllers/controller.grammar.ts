@@ -7,13 +7,13 @@ export class BadGrammarController {
         this.domain = domain;
     }
 
-    async grammarPost(body:string): Promise<BodyResponseBadGrammar>{
+    async grammarPost(body:string, language: string): Promise<BodyResponseBadGrammar>{
        
         const reqOptions: RequestInit = {
             method: 'POST',
 
         }
-        const response = await fetch(`${this.domain}/v2/check?text=${body}&language=es`, reqOptions);
+        const response = await fetch(`${this.domain}/v2/check?language=${language}&text=${body}`, reqOptions);
         if(!response.ok){
             throw new Error(`HTTP error! status: ${response.status}`);
         }
