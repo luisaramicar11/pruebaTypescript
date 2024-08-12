@@ -1,4 +1,4 @@
-import {AuthController} from "./controller.login";
+import {AuthController} from "./controller.login.ts";
 import { successAlert, errorAlert } from "../components/alerts.ts";
 
 const URL_REGISTER: string = "https://api-posts.codificando.xyz";
@@ -13,7 +13,8 @@ form.addEventListener("submit", async (e:Event)=>{
     try {
         console.log("entre al register")
         const response = await auth.register(email, password);
-        const data = response.id;
+        const data = response.id.toString();
+        localStorage.setItem("id", data);
         console.log(response);
         if(data){
             successAlert("Register success")
