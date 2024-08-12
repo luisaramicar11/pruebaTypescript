@@ -1,4 +1,4 @@
-# BAPI POST
+# API POST
 
 This project is a web application that application that draws the posts
 
